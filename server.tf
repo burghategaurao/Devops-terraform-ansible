@@ -11,7 +11,7 @@ provider "aws" {
 region = "us-east-2"
 }
 resource "aws_instance" "myawsserver" {
-  ami = "ami-01107263728f3bef4"
+  ami = "ami-05842f1afbf311a43"
   instance_type = "t2.micro"
   key_name = "gb-jenkins"
 
