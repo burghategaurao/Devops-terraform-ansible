@@ -10,15 +10,15 @@ terraform {
 provider "aws" {
 region = "us-east-2"
 }
-resource "aws_instance" "myawsserver" {
+resource "aws_instance" "gaurao-apiserver" {
   ami = "ami-05842f1afbf311a43"
   instance_type = "t2.micro"
   key_name = "gb-jenkins"
 
   tags = {
-    Name = "Raman-DevOps-batch-server"
+    Name = "gaurao-apiserver"
     env = "Production"
-    owner = "Raman Khanna"
+    owner = "gaurao-apiserver"
   }
   provisioner "local-exec" {
     command = "echo The servers IP address is ${self.public_ip} && echo ${self.public_ip} > /tmp/inv"
