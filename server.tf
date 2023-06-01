@@ -13,7 +13,7 @@ region = "us-east-2"
 resource "aws_instance" "myawsserver" {
   ami = "ami-01107263728f3bef4"
   instance_type = "t2.micro"
-  key_name = "gaurao-jenkins"
+  key_name = "gb-jenkins"
 
   tags = {
     Name = "Raman-DevOps-batch-server"
