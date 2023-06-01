@@ -8,12 +8,12 @@ terraform {
 }
 
 provider "aws" {
-region = "us-east-1"
+region = "us-east-2"
 }
 resource "aws_instance" "myawsserver" {
   ami = "ami-0b0dcb5067f052a63"
   instance_type = "t2.micro"
-  key_name = "raman-import"
+  key_name = "gaurao-jenkins"
 
   tags = {
     Name = "Raman-DevOps-batch-server"
