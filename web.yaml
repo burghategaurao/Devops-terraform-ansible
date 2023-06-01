@@ -3,6 +3,8 @@
   tasks:
     - name: install httpd
       package: name=httpd state=installed
+    - name: install python2 module
+      pip: name: module_name executable: python2  
     - name: configure
       shell: "echo Hello Guys I love DevOps !!! > /var/www/html/index.html"
     - name: start service
